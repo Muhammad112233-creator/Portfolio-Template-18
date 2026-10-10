@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="100%" height="260">
+  <defs>
+    <linearGradient id="rainbowGrad" x1="0%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" stop-color="#ff3366" />
+      <stop offset="16%" stop-color="#ff9933" />
+      <stop offset="33%" stop-color="#ffee33" />
+      <stop offset="50%" stop-color="#33cc66" />
+      <stop offset="66%" stop-color="#3399ff" />
+      <stop offset="83%" stop-color="#9933ff" />
+      <stop offset="100%" stop-color="#ff3366" />
+      <animate attributeName="x1" values="0%;-100%" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="200%;100%" dur="6s" repeatCount="indefinite" />
+    </linearGradient>
+    <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#16140f" opacity="0.12" />
+    </pattern>
+  </defs>
+
+  <!-- Paper Background -->
+  <rect width="1000" height="260" rx="10" fill="#f4f1e9" />
+  <rect width="1000" height="260" rx="10" fill="url(#dots)" />
+
+  <!-- Animated Rainbow Top & Bottom Bars -->
+  <rect x="0" y="0" width="1000" height="8" fill="url(#rainbowGrad)" />
+  <rect x="0" y="252" width="1000" height="8" fill="url(#rainbowGrad)" />
+
+  <!-- Inner Broadsheet Frame -->
+  <rect x="18" y="18" width="964" height="224" fill="none" stroke="#16140f" stroke-width="2.5" />
+  <line x1="18" y1="52" x2="982" y2="52" stroke="#16140f" stroke-width="1.5" />
+  <line x1="18" y1="198" x2="982" y2="198" stroke="#16140f" stroke-width="1.5" />
+
+  <!-- Top Meta Strip -->
+  <text x="36" y="40" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="3" fill="#45413a">MELBOURNE, AUSTRALIA</text>
+  <text x="500" y="40" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" letter-spacing="3.5" fill="#a6382c">THE INVESTIGATION EDITION · TEMPLATE</text>
+  <text x="964" y="40" text-anchor="end" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="3" fill="#45413a">CASE NO. 47 · EST. 2026</text>
+
+  <!-- Main Masthead Title with Animated Rainbow Shimmer -->
+  <text x="500" y="122" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700" fill="#16140f" letter-spacing="-1">
+    The Broadsheet Portfolio
+  </text>
+  <rect x="180" y="136" width="640" height="4" fill="url(#rainbowGrad)" rx="2" />
+
+  <text x="500" y="168" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="600" letter-spacing="4" fill="#45413a">
+    NEXT.JS 15 · REACT 19 · TAILWIND CSS V4 · TYPESCRIPT · VIEW TRANSITIONS
+  </text>
+
+  <!-- Animated Stamp Badge on Right -->
+  <g transform="translate(855, 118) rotate(-8)">
+    <rect x="-62" y="-22" width="124" height="40" rx="4" fill="#fbfaf5" stroke="#a6382c" stroke-width="3.5" />
+    <text x="0" y="4" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="900" letter-spacing="3" fill="#a6382c">IDENTIFIED</text>
+    <animateTransform attributeName="transform" type="rotate" values="-10 855 118; -5 855 118; -10 855 118" dur="3s" repeatCount="indefinite" additive="False" />
+  </g>
+
+  <!-- Animated Magnifying Lens on Left -->
+  <g>
+    <circle cx="115" cy="122" r="24" fill="rgba(251,250,245,0.75)" stroke="#16140f" stroke-width="4" />
+    <circle cx="107" cy="114" r="6" fill="#ffffff" opacity="0.8" />
+    <line x1="132" y1="139" x2="152" y2="159" stroke="#16140f" stroke-width="6" stroke-linecap="round" />
+    <animateTransform attributeName="transform" type="translate" values="0,0; 10,-6; -6,6; 0,0" dur="4.5s" repeatCount="indefinite" />
+  </g>
+
+  <!-- Bottom Ticker Bar -->
+  <text x="500" y="224" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="2.5" fill="url(#rainbowGrad)">
+    ★ 100% HUMAN-CRAFTED EDITORIAL DESIGN · INTERACTIVE LENS INTRO · 7 CASE FILES · DRAG &amp; DROP READY ★
+  </text>
+</svg>

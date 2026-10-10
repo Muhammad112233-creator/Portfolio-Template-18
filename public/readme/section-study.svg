@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 56" width="100%" height="56">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" stop-color="#ff3366" />
+      <stop offset="25%" stop-color="#ff9933" />
+      <stop offset="50%" stop-color="#33cc66" />
+      <stop offset="75%" stop-color="#3399ff" />
+      <stop offset="100%" stop-color="#ff3366" />
+      <animate attributeName="x1" values="0%;-100%" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="200%;100%" dur="5s" repeatCount="indefinite" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="56" rx="6" fill="#16140f" />
+  <rect x="0" y="51" width="900" height="5" fill="url(#g1)" />
+  <circle cx="28" cy="26" r="6" fill="url(#g1)">
+    <animate attributeName="r" values="5;8;5" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <text x="48" y="32" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="800" letter-spacing="2" fill="#fbfaf5">
+    SECTION 01 // FORENSIC STUDY &amp; ARCHITECTURE OF THE REFERENCE SITE
+  </text>
+</svg>
